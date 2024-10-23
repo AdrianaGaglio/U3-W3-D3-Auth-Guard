@@ -1,0 +1,30 @@
+<div>
+  <h1>Benvenuto {{ user.firstName }}</h1>
+
+  <table class="table">
+    <tr>
+      <td>Email:</td>
+      <td>{{ user.email }}</td>
+    </tr>
+    <tr>
+      <td>Password:</td>
+      <td>
+        <ng-container *ngIf="!isChange">{{
+          user.password | crypto
+        }}</ng-container>
+        <ng-container *ngIf="isChange">
+          <input type="password" [(ngModel)]="user.password" />
+          <button (click)="changePassword(user)" class="btn btn-sm btn-warning">
+            Submit
+          </button>
+        </ng-container>
+        <button
+          class="p-0 border-0 text-danger ps-3"
+          (click)="activateChange()"
+        >
+          {{ !isChange ? "Change password" : "Undo" }}
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-6 mx-auto">
+    <form [formGroup]="loginForm" (submit)="login()">
+      <div class="mb-3">
+        <label class="mb-1" for="email">Email:</label>
+        <input
+          id="email"
+          type="text"
+          class="form-control"
+          placeholder="Insert your email"
+          formControlName="email"
+        />
+      </div>
+      <div class="mb-3">
+        <label class="mb-1" for="lastName">Password:</label>
+        <input
+          id="password"
+          type="password"
+          class="form-control"
+          placeholder="Insert your password"
+          formControlName="password"
+        />
+      </div>
+      <button class="btn btn-success btn-sm">Login</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "email": "dypega@mailinator.com",
+      "firstName": "Yvonne",
+      "lastName": "Woodward",
+      "id": 1,
+      "password": "$2a$10$S.nODfwH5uKogg1nA.fFoukQFsFIfMPWuo/YGVG3NlDiGm6Exs9NW"
+    },
+    {
+      "email": "kezutah@mailinator.com",
+      "password": "$2a$10$joya10HHPD4kF3lVQr/mvOFofBxDyRfVJRXqOV4CEt0gYwVeqqpO6",
+      "firstName": "Malik",
+      "lastName": "Calderon",
+      "id": 2
+    }
+  ],
+  "posts": []
+}
